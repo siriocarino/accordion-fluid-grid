@@ -1,0 +1,77 @@
+$color-primary: #0465ac;
+$color-desc: #999;
+$text-default: #333;
+$border-panels-color: #e4e6e5 !default;
+$border-item-panels: 1px solid $border-panels-color;
+$box-shadow-panels: 0 2px 3px rgba(0, 0, 0, 0.2);
+$global-title-size: 18px;
+$item-title-size: 14px;
+$item-open-title-size: 18px;
+$item-desc-size: 12px;
+$item-content-size: 13px;
+#my-accordion {
+  width     : 100%;
+  height    : auto;
+  margin-top: 50px;
+};
+.panels {}
+.item-panels {
+  border-top        : $border-item-panels;
+  padding           : 0 25px;
+  background        : #fff;
+  box-shadow        : $box-shadow-panels;
+  -webkit-box-shadow: $box-shadow-panels;
+  -moz-box-shadow   : $box-shadow-panels;
+  -o-box-shadow     : $box-shadow-panels;
+  position          : relative;
+  cursor            : pointer;
+}
+.item-panels.open .item-title {
+  font-size: $item-open-title-size;
+}
+.arrow {
+  float     : right;
+  margin-top: 25px;
+  font-size : 26px;
+  color     : $color-primary;
+}
+.global-title {
+  font-size  : $global-title-size;
+  color      : #333;
+  padding    : 0 25px;
+  height     : 60px;
+  line-height: 60px;
+  background : #fff;
+}
+.item-title {
+  font-size  : $item-title-size;
+  font-weight: bolder;
+  color      : $color-primary;
+  padding    : 12px 0;
+}
+.item-desc {
+  font-size    : $item-desc-size;
+  color        : $color-desc;
+  padding      : 0 0 12px;
+  text-overflow: ellipsis;
+  /* Required for text-overflow to do anything */
+  white-space  : nowrap;
+  overflow     : hidden;
+}
+.item-content {
+  font-size: $item-content-size;
+  color    : $text-default;
+  padding  : 0 0 15px;
+}
+.slide[data-state=closed] {
+  max-height: 0;
+  padding   : 0;
+  overflow  : hidden;
+}
+.slide[data-state=open] {
+  overflow                  : visible;
+  overflow-y                : hidden;
+  transition-property       : all;
+  transition-duration       : 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}

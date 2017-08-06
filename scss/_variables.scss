@@ -1,0 +1,21 @@
+$font-size-base: 18px !default;
+$bg-default: #f5f5f5;
+$h1-size: 12px;
+$h2-size: 24px; // Sass
+$paddingContent: 20px; // Sass
+$grid-max-width: 100%; //
+$totalCols: 12;
+$totalColSmall: 8;
+$breakpoint-medium: "only screen and (min-width: 840px)";
+@mixin cols($indexCol, $marginCols: 15px ) {
+  $current-col  : 99%/$totalCols*$indexCol; // todo fix 99  $grid-max-width - $paddingContent
+  $margin-double: $marginCols*2;
+  width         : calc( #{$current-col} - #{$margin-double} );
+  margin        : $marginCols;
+}
+@mixin colsSmall($numCols: $totalColSmall, $marginCols: 15px ) {
+  $current-col  : 99%/$totalColSmall*$numCols;
+  $margin-double: $marginCols*2;
+  width         : calc( #{$current-col} - #{$margin-double});
+  margin        : $marginCols;
+};

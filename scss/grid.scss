@@ -1,0 +1,40 @@
+,
+*:after,
+*:before {
+  margin : 0;
+  padding: 0;
+  @include border-box;
+}
+.container-fluid {
+  width     : 100%;
+  margin    : 0;
+  padding   : 0 10px;
+  background: #ccffcc;
+}
+.container-fluid,
+.row {
+  @extend %clearfix;
+}
+[class*='col-'] {
+  float     : left;
+  padding   : 0;
+  width     : 100%;
+  min-height: 50px;
+  background: #c0ffff;
+  margin    : 0;
+}
+.container-fluid {
+  max-width: 100%;
+}
+@for $i from 1 through $totalColSmall {
+  &.col-#{$i} {
+    @include colsSmall($i,15px);
+  }
+}
+@media #{$breakpoint-medium} {
+   @for $i from 1 through $totalCols{
+    &.col-#{$i} {
+      @include cols($i,15px);
+    }
+  }
+}

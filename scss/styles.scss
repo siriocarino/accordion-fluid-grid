@@ -1,0 +1,36 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "grid.scss";
+* {
+  margin : 0;
+  padding: 0;
+}
+html {
+  /* killing 300ms touch delay in IE */
+  -ms-touch-action: manipulation;
+  touch-action    : manipulation;
+}
+body,
+html {
+  overflow-x                : hidden;
+  @include body-font;
+  font-size                 : $font-size-base;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust  : none;
+  background                : $bg-default;
+}
+header {
+  height    : 70px;
+  background: #333;
+  color     : #999;
+  h1 {
+    font-size  : $h1-size;
+    padding    : 12px 25px 0;
+    font-weight: normal;
+  }
+  h2 {
+    font-size  : $h2-size;
+    padding    : 0 25px;
+    font-weight: normal;
+  }
+}

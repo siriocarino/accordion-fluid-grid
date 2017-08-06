@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+
+  <title></title>
+
+  <!-- Bootstrap -->
+  <!-- Bootstrap Core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Custom Fonts -->
+  <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700%7CMontserrat+Subrayada">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menudown">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./"><img src="/img/brand-logo.png" alt="">
+        </a>
+      </div>
+      <div id="menudown" class="navbar-collapse collapse">
+        <!-- <div class="select-lang pull-right">
+          <label for="select-1"></label>
+          <select id="select-1" name="select" class="rd-mailform-select">
+            <option value="English" selected>English</option>
+            <option value="Italian">Italian</option>
+          </select>
+        </div> -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./">Home</a></li>
+          <li><a href="company.html">Azienda</a> </li>
+          <li><a href="activity.html">Attività</a></li>
+          <li><a href="collections.html">Collezioni</a></li>
+          <li><a href="contacts.html">Contatti</a></li>
+          <li><a class="lang-it" href="/it/index.html">ITA</a></li>
+          <li><a class="lang-en" href="/en/index.html">ENG</a></li>
+        </ul>
+
+      </div>
+
+      <!--/.nav-collapse -->
+    </div>
+
+    <!--/.container-fluid -->
+  </nav>
+
+    <!-- Page Content-->
+    <div class="container box-contact">
+      <!-- Breadcrumbs & Page title-->
+      <div class="row offset-top-50 ">
+
+        <div class="col-md-6 offset-top-50">
+
+
+          <h6>BEST MODE srl</h6>
+          <p class="lead">Via Como 54, 23868 Valmadrera (LC) Italy<p/>
+          <ul class="px-0">
+            <li>
+              Telephone: <span>+39 0341 580603</span>
+            </li>
+            <li>
+                Fax: <span>+39 0341 200363</span>
+            </li>
+            <li>
+                E-mail: <span> <a href="maiilto:info@bestmode.it">info@bestmode.it</a></span>
+            </li>
+            <li>
+                  Homepage:  <span>www.bestmode.it</span>
+            </li>
+            <li class="offset-top-50">
+              Matteo Longhi <span>Mobile (+39) 348 3669508</span><br />
+              <a href="mailto:matteolonghi@bestmode.it">matteolonghi@bestmode.it</a>
+            </li>
+          </ul>
+
+              <section class="box-map offset-top-50">
+                <div id="map"></div>
+              </section>
+
+        </div>
+
+        <div class="col-md-6 text-center">
+
+          <div class="row text-center ">
+            <h4 class="offset-top-50">Contatti</h4>
+
+            <form name="sentMessage" id="contactForm" novalidate="" class="offset-top-50">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Nome *" id="name" required="" data-validation-required-message="Inserisci il tuo nome.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Email *" id="email" required="" data-validation-required-message="Inserisci la tua email." aria-invalid="false">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control" placeholder="Telefono *" id="phone" required="" data-validation-required-message="Inserisci il tuo telefono.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group offset-top-40">
+                  <textarea class="form-control" placeholder="Messaggio *" id="message" required="" data-validation-required-message="Inserisci il tuo messaggio."></textarea>
+                  <p class="text-danger"></p>
+                </div>
+                <div class="clearfix"></div>
+                <p>
+                  I dati trasmessi saranno raccolti ed elaborati con riservatezza e nel pieno rispetto della legge sulla privacy ai sensi del D. Lgs. 196/2003 sul trattamento dei propri dati personali.
+                </p>
+                <div class="col-lg-12 text-center offset-top-40">
+                  <div id="success"></div>
+                  <button type="submit" class="btn btn-xl">INVIA MESSAGGIO</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Page Footer-->
+    <footer class="page-foot ">
+      <div class="container">
+        <div class="row ">
+          <div class="col-xs-10 col-md-3 offset-top-20">
+            <a class="brand-logo img-responsive" href="./"><img src="/img/brand-logo.png" alt=""></a>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-md-2 offset-top-20 ">
+            <h6>Servizio Clienti</h6>
+            <ul class="align-center px-0">
+              <li><a href="./">Home</a></li>
+              <li><a href="company.html">Azienda</a></li>
+              <li><a href="activity.html">Attività</a></li>
+              <li><a href="collections.html">Collezioni</a></li>
+              <li><a href="contacts.html">Contatti</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-md-2 offset-top-20">
+            <h6>Contatti</h6>
+            <address ><span>BEST MODE srl <br />Via Como 54 23868 Valmadrera (LC) Italy</span>
+                    <div class=""><a href="callto:#">+39 0341 580603<br></a><a href="mailto:info@bestmode.it">info@bestmode.it</a></div>
+            </address>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-md-2 offset-top-50">
+            <p >
+              C.F.- P.IVA 00640610135<br />Capitale Sociale: EURO 10.920,00<br />Registro imprese di Lecco<br /> R.E.A. 154098<br />
+              <a href="#" class="text-underline">PRIVACY POLICY</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+           <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+           <!-- Include all compiled plugins (below), or include individual files as needed -->
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+           <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMKdWGwk-2w39RPB_cbwI6uHWjIvrCcE0&callback=initMap"></script>
+           <!-- Java script-->
+           <script src="/js/jqBootstrapValidation.js"></script>
+           <script src="/js/contact_me.js"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+           <script src="/js/main.js"></script>
+
+
+
+        </body>
+
+        </html>
